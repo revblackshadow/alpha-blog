@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700" rel="stylesheet">
+<style type="text/css">
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		margin: 0;
+		box-sizing: border-box;
+		font-family: 'Open Sans', sans-serif;
+		color: #333;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Roboto', sans-serif;
+	}
+	.container {
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.logo {
+		width: 30%;
+		margin-top: 20px;
+		float: left;
+	}
+	.nav {
+		width: 70%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		float: left;
+	}
+	.nav li {
+		display: inline;
+	}
+	.nav li a {
+		padding: 40px 20px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #fff;
+		display: inline-block;
+	}
+	.nav li a:hover {
+		padding: 40px 20px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #fff;
+		background: #9d00bc;
+		display: inline-block;
+	}
+	.margin-bottom-medium {
+		margin-bottom: 40px;
+	}
+	.padding-top-bottom-mega-large {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.padding-top-bottom-large {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.padding-top-bottom-light {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.padding-right-medium {
+		padding-right: 40px;
+	}
+	.padding-left-medium {
+		padding-left: 40px;
+	}
+	.row {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.column {
+		padding-left: 15px;
+		padding-right: 15px;
+		float: left;
+	}
+	.full {
+		width: 100%;
+	}
+	.half {
+		width: 50%;
+	}
+	.text-uppercase {
+		text-transform: uppercase;
+	}
+	.white-text {
+		color: #FFF;
+	}
+	.banner-copy {
+		font-family: 'Roboto', sans-serif;
+		font-size: 36px;
+		font-weight: bold;
+	}
+	.line-height-medium {
+		line-height: 1.6em;
+	}
+	.cat-background {
+		background: url(https://static.pexels.com/photos/296859/pexels-photo-296859.png) center center;
+	}
+	.black-background-transparent {
+		background: rgba(0,0,0,.6);
+	}
+	.pink-background {
+		background: #ff00c7;
+	}
+	.light-gray-background {
+		background: #AAA;
+	}
+	.pink-button {
+		padding: 20px;
+		font-family: 'Roboto', sans-serif;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #fff;
+		background: #ff00c7;
+		border-radius: 20px;
+	}
+</style>
+</head>
+
+<body>
+<div class="column full pink-background">
+	<div class="container">
+		<div class="logo">
+			<h3 class="text-uppercase white-text">I love &amp; Hate Cats</h3>
+		</div>
+		<ul class="nav">
+			<li><%= link_to 'Home', root_path %></li>
+			<li><%= link_to 'About', about_path %></li>
+			<!-- li><a href="#">Playing</a></li>
+			<li><a href="#">Evil</a></li -->
+		</ul>
+	</div><!-- END CONTAINER -->
+</div><!-- END COLUMN FULL -->
+<div class="column full padding-top-bottom-mega-large cat-background">
+	<div class="container">
+		<div class="row">
+			<div class="column half">
+				<div class="banner-copy white-text">We Love and Hate Cats! Read to know more about our conflicting emotions for our feline friends/foes.</div>
+				<p class="line-height-medium white-text margin-bottom-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo sapien, ultrices sit amet fringilla nec, bibendum ut ipsum. Phasellus vehicula, tortor non condimentum consectetur, nibh tellus ultrices mi, id facilisis velit urna et metus. In sit amet convallis erat. Duis velit eros, scelerisque sagittis ornare a, pulvinar eu nunc.</p>
+				<a href="#" class="pink-button">Read More</a>
+			</div><!-- END COLUMN HALF -->
+		</div><!-- END ROW -->
+	</div><!-- END CONTAINER -->
+</div><!-- END COLUMN FULL -->
+<div class="column full light-gray-background padding-top-bottom-large">
+	<div class="container">
+		<div class="row">
+			<div class="column half">
+				<h2 class="text-uppercase">Lorem ipsum dolor sit amet</h2>
+				<p class="line-height-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo sapien, ultrices sit amet fringilla nec, bibendum ut ipsum. Phasellus vehicula, tortor non condimentum consectetur, nibh tellus ultrices mi, id facilisis velit urna et metus. In sit amet convallis erat. Duis velit eros, scelerisque sagittis ornare a, pulvinar eu nunc. Phasellus vehicula, tortor non condimentum consectetur, nibh tellus ultrices mi, id facilisis velit urna et metus. In sit amet convallis erat. Duis velit eros, scelerisque sagittis ornare a, pulvinar eu nunc.</p>
+			</div>
+			<div class="column half">
+				<h2 class="text-uppercase">Lorem ipsum dolor sit amet</h2>
+				<p class="line-height-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo sapien, ultrices sit amet fringilla nec, bibendum ut ipsum. Phasellus vehicula, tortor non condimentum consectetur, nibh tellus ultrices mi, id facilisis velit urna et metus. In sit amet convallis erat. Duis velit eros, scelerisque sagittis ornare a, pulvinar eu nunc. Phasellus vehicula, tortor non condimentum consectetur, nibh tellus ultrices mi, id facilisis velit urna et metus. In sit amet convallis erat. Duis velit eros, scelerisque sagittis ornare a, pulvinar eu nunc.</p>
+			</div>
+		</div><!-- END ROW -->
+	</div><!-- END CONTAINER -->
+</div><!-- END COLUMN FULL -->
+<div class="column full pink-background">
+	<div class="container">
+		<div class="logo">
+			<h3 class="text-uppercase white-text">I love &amp; Hate Cats</h3>
+		</div>
+	</div><!-- END CONTAINER -->
+</div><!-- END COLUMN FULL -->
+</body>
+</html>
